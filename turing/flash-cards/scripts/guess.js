@@ -5,12 +5,21 @@ class Guess {
   constructor ({response, card}) {
     this.response = response;
     this.card = card;
+    this.correct = card.answer === response ? true : false;
+
+    // this.response = response;
+    // this.card = card;
   }
 
-  feedback(guess) {
-    let userResponse = guess.response.toLowerCase()
-    let answer = guess.card.answer.toLowerCase()
-     return answer === userResponse ? 'correct' : 'wrong';
+  feedback() {
+    if(this.correct) {
+      return 'kudos, champ.'
+    } else {
+      return 'go back to school'
+    }
+    // let userResponse = guess.response.toLowerCase()
+    // let answer = guess.card.answer.toLowerCase()
+    //  return answer === userResponse ? 'correct' : 'false';
   }
 }
 
