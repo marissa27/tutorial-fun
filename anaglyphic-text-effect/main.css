@@ -1,5 +1,6 @@
 h1 {
   display: inline;
+  margin: 0;
   position: relative;
   color: rgba(255,0,0,0.5);
   font: 200px Helvetica, Sans-Serif;
@@ -13,4 +14,28 @@ h1:after {
   top: -5px;
   color: rgba(0,255,255,0.5);
   content: attr(data-content);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#input-field {
+  height: 27px;
+  padding: 6px;
+  font-size: 15px;
+}
+
+#submit-btn {
+  padding: 10px;
+  background-color: rgba(0,255,255,0.5);
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+#submit-btn:hover {
+  background-color: rgba(255,0,0,0.5);
 }
