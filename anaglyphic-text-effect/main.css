@@ -10,7 +10,7 @@ h1 {
 h1:after {
   left: 10px;
   position: absolute;
-  top: 5px;
+  top: -5px;
   color: rgba(0,255,255,0.5);
   content: 'Marissa';
 }
